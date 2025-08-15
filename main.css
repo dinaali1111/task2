@@ -20,17 +20,17 @@ body {
     }
 
     .parent {
-        background: linear-gradient(120deg, #b1c4e5 0%, #e2d1f9 100%);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
-        padding: 32px 24px;
-        border-radius: 18px;
-        width: 400px;
-        max-width: 95vw;
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        gap: 18px;
-        transition: box-shadow 0.3s;
+    background: linear-gradient(120deg, #b1c4e5 0%, #e2d1f9 100%);
+    box-shadow: 0 16px 40px 0 rgba(31, 38, 135, 0.22);
+    padding: 48px 36px;
+    border-radius: 24px;
+    width: 650px;
+    max-width: 99vw;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    transition: box-shadow 0.3s;
     }
 
     .parent:hover {
