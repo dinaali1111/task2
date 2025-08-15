@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: fadeIn 1.5s;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .parent {
+        background: linear-gradient(120deg, #b1c4e5 0%, #e2d1f9 100%);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+        padding: 32px 24px;
+        border-radius: 18px;
+        width: 400px;
+        max-width: 95vw;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        transition: box-shadow 0.3s;
+    }
+
+    .parent:hover {
+        box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.3);
+    }
+
+    .dashboard-title {
+        text-align: center;
+        font-size: 2rem;
+        color: #3a3a6c;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+
+    .info-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        font-size: 1.1rem;
+        color: #4b4b6b;
+    }
+
+    .details-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .details-row > div {
+        flex: 1;
+        margin: 0 2px;
+        padding: 12px 8px;
+        border-radius: 8px;
+        background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+        color: #3a3a6c;
+        font-weight: 500;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        transition: transform 0.2s, box-shadow 0.2s;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+
+    .details-row > div:hover {
+        transform: scale(1.07);
+        box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+    }
+
+    #tagName {
+        background: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%);
+    }
+    #className {
+        background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+    }
+    #idName {
+        background: linear-gradient(120deg, #f7797d 0%, #FBD786 100%);
+    }
+    #name {
+        background: linear-gradient(120deg, #c2e9fb 0%, #81a4fd 100%);
+    }
+
+    .show-btn {
+        padding: 12px 28px;
+        background: linear-gradient(120deg, #667eea 0%, #764ba2 100%);
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+        transition: background 0.2s, transform 0.2s;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .show-btn:hover {
+        background: linear-gradient(120deg, #43cea2 0%, #185a9d 100%);
+        transform: scale(1.05);
+    }
+
+    .output-section {
+        background: #fff;
+        border-radius: 10px;
+        padding: 18px 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        margin-top: 10px;
+    }
+    .output-section h2 {
+        color: #764ba2;
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+    #output {
+        font-size: 1.1rem;
+        color: #333;
+        margin-top: 6px;
+        line-height: 1.7;
+        word-break: break-word;
+    }
+
+    @media (max-width: 600px) {
+        .parent {
+            width: 98vw;
+            padding: 12px 4vw;
+        }
+        .info-row, .details-row {
+            flex-direction: column;
+            gap: 6px;
+        }
+        .details-row > div {
+            font-size: 1rem;
+            padding: 10px 6px;
+        }
+    }
+    text-align: center;
+    margin-top: 20px;
+}
+
+#output {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: wheat;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #495057;
+    white-space: pre-wrap;
+}
